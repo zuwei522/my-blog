@@ -13,9 +13,9 @@
 # website title
 title = "有且可为"
 # Hostname (and path) to the root
-baseURL = "http://localhost:1313"
+baseURL = "https://zuwei.top"
 # theme list
-theme = ["FixIt"] # enable in your site config file
+theme = ["FixIt", "component-projects"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
 # language code ["en", "zh-CN", "fr", "pl", ...]
@@ -50,7 +50,7 @@ enableEmoji = true
     # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
     post = ""
     name = "归档"
-    url = "/posts/"
+    url = "/archives/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
     weight = 1
@@ -68,37 +68,67 @@ enableEmoji = true
       divided = false
   [[menu.main]]
     identifier = "分类"
-    parent = ""
-    pre = ""
-    post = ""
+    parent = "归档"
     name = "分类"
     url = "/categories/"
-    title = ""
-    weight = 2
+    title = "所有分类"
+    weight = 1
     [menu.main.params]
       icon = "fa-solid fa-folder-tree"
   [[menu.main]]
     identifier = "标签"
-    parent = ""
-    pre = ""
-    post = ""
+    parent = "归档"
     name = "标签"
     url = "/tags/"
-    title = ""
-    weight = 3
+    title = "所有标签"
+    weight = 2
     [menu.main.params]
       icon = "fa-solid fa-tags"
+
   [[menu.main]]
     identifier = "友链"
-    parent = ""
-    pre = ""
-    post = ""
     name = "友链"
     url = "/friends/"
-    title = ""
+    title = "友情链接"
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-users-viewfinder fa-fw fa-sm"
+
+  [[menu.main]]
+    identifier = "关于"
+    name = "关于"
+    url = "/about/"
+    weight = 99
+    [menu.main.params]
+      icon = "fa-solid fa-user-pen"
+  [[menu.main]]
+    identifier = "我的作品集"
+    parent = "关于"
+    name = "我的作品集"
+    url = "/projects/"
+    weight = 1
+    [menu.main.params]
+      icon = "fa-solid fa-laptop-code"
+
+  [[menu.main]]
+    identifier = "其他"
+    name = "其他"
+    title = "其他站点"
     weight = 3
     [menu.main.params]
+      draft = true
       icon = "fa-solid fa-link"
+  [[menu.main]]
+    identifier = "云盘"
+    parent = "其他"
+    name = "云盘"
+    url = "https://alist.zuwei.top"
+    title = "私人云盘"
+    weight = 1
+    [menu.main.params]
+      draft = true
+      icon = "fa-solid fa-cloud"
+  
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -315,11 +345,11 @@ enableEmoji = true
   # 日期格式，默认：2006-01-02
   dateFormat = "2006-01-02"
   # 网站图片，用于 Open Graph 和 Twitter Cards
-  images = []
+  images = ["https://zuwei.top/images/social_preview.png"]
   # FixIt 0.2.12 | 开启 PWA 支持
   enablePWA = false
   # FixIt 0.2.14 | 是否自动显示外链图标
-  externalIcon = false
+  externalIcon = true
   # FixIt 0.3.0 | 是否反转导航菜单的顺序
   navigationReverse = false
   # FixIt 0.3.0 | 是否在每个页面标题中添加网站标题
@@ -339,12 +369,11 @@ enableEmoji = true
     name = "Zuwei"
     email = "jiang@zuwei.top"
     link = "https://zuwei.top"
-    avatar = "https://avatars.githubusercontent.com/u/68957552?v=4"
+    avatar = "https://cravatar.cn/avatar/e7340593e9884500b808112dd3c19fac?s=20"
 
   # FixIt 0.3.0 | 公共 Git 仓库信息，仅在 enableGitInfo 设为 true 时有效
   [params.gitInfo]
-    # e.g. "https://github.com/hugo-fixit/docs"
-    repo = "https://github.com/zuwei522/blog"
+    repo = "https://github.com/zuwei522/my-blog"
     branch = "main"
     # 相对于仓库根目录的内容目录路径
     dir = "content"
@@ -361,9 +390,9 @@ enableEmoji = true
     # 更现代的 SVG 网站图标，可替代旧的 .png 和 .ico 文件
     svgFavicon = ""
     # Safari 图标颜色
-    iconColor = "#5bbad5"
+    iconColor = "#00bcf9"
     # Windows v8-10 磁贴颜色
-    tileColor = "#da532c"
+    tileColor = "#00bcf9"
     # FixIt 0.2.12 | Android 浏览器主题色
     [params.app.themeColor]
       light = "#f8f8f8"
@@ -423,7 +452,7 @@ enableEmoji = true
     # FixIt 0.2.12 | 页面头部导航栏副标题配置
     [params.header.subtitle]
       # 副标题名称
-      name = ""
+      name = "Zuwei's Blog"
       # 是否为副标题显示打字机动画
       typeit = false
 
@@ -514,23 +543,23 @@ enableEmoji = true
     rss = 10
     # Home page profile
     [params.home.profile]
-      enable = false
+      enable = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "https://cravatar.cn/avatar/e7340593e9884500b808112dd3c19fac?s=96"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "Zuwei"
       # subtitle shown in home page
-      subtitle = ""
+      subtitle = "Love & Share"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
       social = true
       # disclaimer (HTML format is supported)
-      disclaimer = ""
+      # disclaimer = "<img src='https://ghchart.rshah.org/zuwei522'/>"
     # Home page posts
     [params.home.posts]
       enable = true
@@ -745,7 +774,7 @@ enableEmoji = true
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
     enable = true
-    permalink = "https://github.com/zuwei522/blog"
+    permalink = "https://github.com/zuwei522/my-blog"
     title = "在 GitHub 上查看源代码"
     position = "right" # ["left", "right"]
 
@@ -942,15 +971,15 @@ enableEmoji = true
     # FixIt 0.2.17 | NEW Donate (Sponsor) settings
     [params.page.reward]
       enable = true
-      animation = true
+      animation = false
       # position relative to post footer, optional values: ["before", "after"]
       position = "after"
       # comment = "Buy me a coffee"
       # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
       mode = "static"
       [params.page.reward.ways]
-        wechatpay = "/images/wechatpay.png"
-        alipay = "/images/alipay.png"
+        wechatpay = "/images/wechatdonate.webp"
+        alipay = "/images/alipay.webp"
         # paypal = "/images/paypal.png"
         # bitcoin = "/images/bitcoin.png"
     # social share links in post page
@@ -1094,11 +1123,11 @@ enableEmoji = true
         darkTheme = "github-dark"
       # FixIt 0.2.13 | NEW Twikoo comment config (https://twikoo.js.org/)
       [params.page.comment.twikoo]
-        enable = false
-        envId = ""
+        enable = true
+        envId = "https://twikoo.zuwei.top"
         region = ""
         path = ""
-        visitor = true
+        visitor = false
         commentCount = true
         # FixIt 0.2.17 | CHANGED enable lightgallery support
         lightgallery = false
@@ -1119,8 +1148,8 @@ enableEmoji = true
         emitMetadata = "0"
         inputPosition = "top" # ["top", "bottom"]
         lang = "zh-CN"
-        lightTheme = "light"
-        darkTheme = "dark"
+        lightTheme = "light_high_contrast"
+        darkTheme = "dark_dimmed"
         lazyLoad = false
     # Third-party library config
     [params.page.library]

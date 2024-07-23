@@ -1,43 +1,108 @@
 ---
-title: My First Post
+title: 我的第一篇文章
 subtitle:
-date: 2024-07-22T19:36:24+08:00
-slug: 583bc6c
-draft: false
+date: 2020-03-04T15:58:26+08:00
+lastmod: 2020-03-04T15:58:26+08:00
+slug: example
+draft: true
 author:
-  name:
+  name: Zuwei
   link:
   email:
   avatar:
-description:
+description: 
 keywords:
-license:
-comment: false
-weight: 0
+  - Hugo
+  - FixIt
 tags:
-  - 233
+  - Hugo
+  - FixIt
 categories:
-  - 666
+  - Hugo
+
+resources:
+  - name: featured-image
+    src: /images/covers/example.svg
+  - name: featured-image-preview
+    src: /images/covers/example.svg
+repost:
+  enable: false
+  url:
+license: 
+password:
+message:
+images: []
+
 hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRss: false
 hiddenFromRelated: false
-summary:
-resources:
-  - name: featured-image
-    src: featured-image.jpg
-  - name: featured-image-preview
-    src: featured-image-preview.jpg
-toc: true
-math: false
-lightgallery: false
-password:
-message:
-repost:
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+pageStyle: "normal"
+
+toc:
   enable: true
-  url:
+  auto: true
+expirationReminder:
+  enable: false
+  # ...
+code:
+  copy: true
+  # ...
+edit:
+  enable: false
+  # ...
+math:
+  enable: true
+  # ...
+mapbox:
+  accessToken: ""
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # 位于 "assets/"
+    # 或者
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # 位于 "assets/"
+    # 或者
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-233
+
 <!--more-->
+
+{{< gist zuwei522 d131febc2fc4a593fa2a26659eed6e4e >}}
+
+```C
+#include<stdio.h>
+int main(){
+printf("你好，世界！");
+return 0;
+}
+```
+
+{{< gh-repo-card-container >}}
+  {{< gh-repo-card repo="hugo-fixit/hugo-fixit-starter" >}}
+  {{< gh-repo-card repo="hugo-fixit/hugo-fixit-starter1" >}}
+  {{< gh-repo-card repo="hugo-fixit/docs" >}}
+  {{< gh-repo-card repo="Lruihao/hugo-blog" >}}
+{{< /gh-repo-card-container >}}

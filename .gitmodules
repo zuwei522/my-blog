@@ -1,3 +1,6 @@
 [submodule "themes/FixIt"]
 	path = themes/FixIt
 	url = https://gitee.com/lruihao/FixIt
+[submodule "themes/component-projects"]
+	path = themes/component-projects
+	url = https://github.com/hugo-fixit/component-projects.git
