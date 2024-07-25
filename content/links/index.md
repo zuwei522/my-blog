@@ -6,7 +6,6 @@ title: Links
 updated: '2024-07-26T02:13:26.021+08:00'
 ---
 <div id="qexo-friends"></div>
-
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "https://qexo.zuwei.top")</script>
@@ -14,7 +13,6 @@ updated: '2024-07-26T02:13:26.021+08:00'
 ## 申请友链
 
 <div id="friends-api"></div>
-<div id="reCaptcha"></div>
-<script src="https://recaptcha.net/recaptcha/api.js?render=6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4"></script>
+<script async src="https://recaptcha.net/recaptcha/api.js?render=6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4"></script>
 <script src="https://unpkg.com/qexo-friends/friends-api.js"></script>
-<script>qexo_friend_api("friends-api","https://qexo.zuwei.top","6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4");</script>
+<script>var reCaptcha = "6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4";qexo_friend_api("friends-api","https://qexo.zuwei.top","6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4");</script>
