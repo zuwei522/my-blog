@@ -1075,23 +1075,23 @@ enableEmoji = true
         commentCount = true # FixIt 0.2.13 | NEW
       # FixIt 0.2.16 | CHANGED Waline comment config (https://waline.js.org)
       [params.page.comment.waline]
-        enable = false
-        serverURL = ""
-        pageview = false # FixIt 0.2.15 | NEW
-        emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
+        enable = true
+        serverURL = "https://comment.zuwei.top"
+        pageview = true # FixIt 0.2.15 | NEW
+        emoji = ["//unpkg.com/@waline/emojis@1.2.0/bilibili", "https://unpkg.com/@waline/emojis@1.2.0/alus", "https://unpkg.com/@waline/emojis@1.2.0/tieba"]
         meta = ["nick", "mail", "link"]
         requiredMeta = []
-        login = "enable"
+        login = "force"
         wordLimit = 0
         pageSize = 10
-        imageUploader = false # FixIt 0.2.15 | NEW
-        highlighter = false # FixIt 0.2.15 | NEW
-        comment = false # FixIt 0.2.15 | NEW
+        imageUploader = true # FixIt 0.2.15 | NEW 是否启用图片上传
+        highlighter = true # FixIt 0.2.15 | NEW 是否启用代码高亮
+        comment = true # FixIt 0.2.15 | NEW 是否显示文章评论数
         texRenderer = false # FixIt 0.2.16 | NEW
-        search = false # FixIt 0.2.16 | NEW
-        recaptchaV3Key = "" # FixIt 0.2.16 | NEW
-        turnstileKey = "" # FixIt 0.3.8 | NEW
-        reaction = false # FixIt 0.2.18 | NEW
+        search = true # FixIt 0.2.16 | NEW
+        # recaptchaV3Key = "6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4" # FixIt 0.2.16 | NEW
+        turnstileKey = "0x4AAAAAAAfxPfKy8pQoNnqt" # FixIt 0.3.8 | NEW
+        reaction = true # FixIt 0.2.18 | NEW
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
         enable = false
@@ -1123,7 +1123,7 @@ enableEmoji = true
         darkTheme = "github-dark"
       # FixIt 0.2.13 | NEW Twikoo comment config (https://twikoo.js.org/)
       [params.page.comment.twikoo]
-        enable = true
+        enable = false
         envId = "https://twikoo.zuwei.top"
         region = ""
         path = ""
