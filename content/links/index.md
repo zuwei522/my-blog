@@ -1,18 +1,12 @@
 ---
+comment: false
 date: '2024-07-26T00:58:31+08:00'
-excerpt: +++ title = 'Links' subtitle = '友情链接' date = 2024-07-26T00:58:31+08:00 draft = false comment = false +++         申请友链            ...
-title: 友情链接
-updated: '2024-07-26T02:09:41.044+08:00'
+subtitle: 友情链接
+title: Links
+updated: '2024-07-26T02:13:26.021+08:00'
 ---
-+++
-title = 'Links'
-subtitle = '友情链接'
-date = 2024-07-26T00:58:31+08:00
-draft = false
-comment = false
-+++
-
 <div id="qexo-friends"></div>
+
 <link rel="stylesheet" href="https://unpkg.com/qexo-friends/friends.css"/>
 <script src="https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/friends.js"></script>
 <script>loadQexoFriends("qexo-friends", "https://qexo.zuwei.top")</script>
