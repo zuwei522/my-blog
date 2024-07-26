@@ -88,11 +88,20 @@ enableEmoji = true
   [[menu.main]]
     identifier = "友链"
     name = "友链"
-    url = "/friends/"
+    url = "/links/"
     title = "友情链接"
     weight = 2
     [menu.main.params]
       icon = "fa-solid fa-users-viewfinder fa-fw fa-sm"
+      
+  [[menu.main]]
+    identifier = "说说"
+    name = "说说"
+    url = "/talks/"
+    title = "说说"
+    weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-comment"
 
   [[menu.main]]
     identifier = "关于"
