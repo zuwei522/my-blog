@@ -729,12 +729,12 @@ enableEmoji = true
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
   [params.verification]
     google = ""
-    bing = ""
+    bing = "7820547BD8288B228272797ADCAE9BD4"
     yandex = ""
     pinterest = ""
     baidu = ""
     so = ""
-    sogou = ""
+    sogou = "O43WALb6g3"
 
   # Site SEO config
   [params.seo]
