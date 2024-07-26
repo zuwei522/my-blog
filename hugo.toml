@@ -481,7 +481,7 @@ enableEmoji = true
     # 网站创立年份
     since = ""
     # FixIt 0.2.12 | 公网安备信息，仅在中国使用（支持 HTML 格式）
-    gov = ""
+    gov = "总访问量 <span id='qexo-site-pv'>Loading...</span> | 访客数 <span id='qexo-site-uv'>Loading...</span>"
     # ICP 备案信息，仅在中国使用（支持 HTML 格式）
     icp = '<a href="https://icp.gov.moe/?keyword=20230841" target="_blank">萌ICP备20230841号</a>'
     # 许可协议信息（支持 HTML 格式）
@@ -1172,6 +1172,7 @@ enableEmoji = true
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
+        someJavascript = "js/statistic.js"
     # Page SEO config
     [params.page.seo]
       # image URL
