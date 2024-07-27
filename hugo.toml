@@ -1098,8 +1098,8 @@ enableEmoji = true
         comment = true # FixIt 0.2.15 | NEW 是否显示文章评论数
         texRenderer = false # FixIt 0.2.16 | NEW
         search = true # FixIt 0.2.16 | NEW
-        # recaptchaV3Key = "6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4" # FixIt 0.2.16 | NEW
-        turnstileKey = "0x4AAAAAAAfxPfKy8pQoNnqt" # FixIt 0.3.8 | NEW
+        recaptchaV3Key = "6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4" # FixIt 0.2.16 | NEW
+        # turnstileKey = "0x4AAAAAAAfxPfKy8pQoNnqt" # FixIt 0.3.8 | NEW
         reaction = true # FixIt 0.2.18 | NEW
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
