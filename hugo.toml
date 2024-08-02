@@ -1172,6 +1172,7 @@ enableEmoji = true
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
+        qexoStatistic = "https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/statistic.js"
         someJavascript = "js/statistic.js"
     # Page SEO config
     [params.page.seo]
