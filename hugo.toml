@@ -479,9 +479,9 @@ enableEmoji = true
     # 是否显示作者
     author = true
     # 网站创立年份
-    since = ""
+    since = "2022"
     # FixIt 0.2.12 | 公网安备信息，仅在中国使用（支持 HTML 格式）
-    gov = "总访问量 <span id='qexo-site-pv'>Loading...</span> | 访客数 <span id='qexo-site-uv'>Loading...</span>"
+    gov = "<i class='fa-solid fa-eye'></i> <span id='qexo-site-pv'>Loading...</span> | <i class='fa-solid fa-user'></i> <span id='qexo-site-uv'>Loading...</span>"
     # ICP 备案信息，仅在中国使用（支持 HTML 格式）
     icp = '<a href="https://icp.gov.moe/?keyword=20230841" target="_blank">萌ICP备20230841号</a>'
     # 许可协议信息（支持 HTML 格式）
@@ -1098,8 +1098,8 @@ enableEmoji = true
         comment = true # FixIt 0.2.15 | NEW 是否显示文章评论数
         texRenderer = false # FixIt 0.2.16 | NEW
         search = true # FixIt 0.2.16 | NEW
-        # recaptchaV3Key = "6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4" # FixIt 0.2.16 | NEW
-        turnstileKey = "0x4AAAAAAAfxPfKy8pQoNnqt" # FixIt 0.3.8 | NEW
+        recaptchaV3Key = "6LcyrxcqAAAAAPhwoAk7jEINEGvVtx6te1NcCwJ4" # FixIt 0.2.16 | NEW
+        # turnstileKey = "0x4AAAAAAAfxPfKy8pQoNnqt" # FixIt 0.3.8 | NEW
         reaction = true # FixIt 0.2.18 | NEW
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
