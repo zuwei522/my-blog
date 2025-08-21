@@ -7,6 +7,6 @@
         "serve": "hugo server"
     },
     "devDependencies": {
-        "hugo-bin": "^0.148.2"
+        "hugo-extended": "^0.148.2"
     }
 }
