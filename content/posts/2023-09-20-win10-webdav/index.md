@@ -20,18 +20,18 @@ lightgallery: true
 最近想在机房上课的时候，直接访问在宿舍搭建的 Alist 网盘存取代码，但只能在 Web 页面中下载文件，而且还不能下载一整个文件夹。于是想到通过挂载 WebDAV 来访问，这样还可以直接把文件夹添加到 VS Code 的工作区中了。
 
 可以使用 RaiDrive 来挂载 WebDAV，但是每次都要安装软件，有些麻烦。能不能直接映射网络驱动器呢？答案是可以的，但是原生只支持 https 协议的 WebDAV，需要修改一下注册表才能支持 http 的 WebDAV。
-{{< image src="/images/2023/09/3760110708.png" alt="映射网络驱动器" caption="映射网络驱动器" >}}
+{{< image src="2023093760110708.png" alt="映射网络驱动器" caption="映射网络驱动器" >}}
 
 ## 步骤
 1. 按下 “windows徽标键” + “R”，打开运行窗口，输入 `regedit`，点击确定后，打开注册表编辑器窗口。
-{{< image src="/images/2023/09/3710571008.png" alt="运行" caption="运行" >}}
+{{< image src="2023093710571008.png" alt="运行" caption="运行" >}}
 
 2. 将路径定位到以下路径：`计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters`。双击右侧界面中的 `BasicAuthLevel` 条目，将数值数据修改为“2”，点击确定后关闭注册表编辑器。
-{{< image src="/images/2023/09/4158255840.png" alt="修改注册表" caption="修改注册表" >}}
+{{< image src="2023094158255840.png" alt="修改注册表" caption="修改注册表" >}}
 
 3. 按下 “windows徽标键” + “R”，打开运行窗口，输入 `services.msc`，点击确定后，打开“服务”界面。找到 “WebClient”
 服务，右键点击打开选项菜单，选择重新启动，稍等几秒，待完成后，关闭“服务”界面。
-{{< image src="/images/2023/09/3253344957.png" alt="服务" caption="服务" >}}
+{{< image src="2023093253344957.png" alt="服务" caption="服务" >}}
 
 > 引用：<https://blog.csdn.net/qq_38894585/article/details/128818512>
 

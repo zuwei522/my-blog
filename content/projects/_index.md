@@ -6,4 +6,4 @@ sectionSlot: Some text to display in the section slot which is above the related
 layout: projects
 ---
 
-{{< image src="/images/covers/projects.svg" title="Projects" width="100%" linked=false >}}
+{{< image src="projects.svg" title="Projects" width="100%" linked=false >}}

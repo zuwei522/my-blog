@@ -88,7 +88,7 @@ enableEmoji = true
   [[menu.main]]
     identifier = "友链"
     name = "友链"
-    url = "/links/"
+    url = "/friends/"
     title = "友情链接"
     weight = 2
     [menu.main.params]

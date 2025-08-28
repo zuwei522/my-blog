@@ -4,7 +4,8 @@
     "scripts": {
         "build": "hugo",
         "create": "hugo new",
-        "serve": "hugo server"
+        "dev": "hugo server -e development",
+        "server": "hugo server -e production"
     },
     "devDependencies": {
         "hugo-extended": "^0.148.2"
