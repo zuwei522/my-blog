@@ -240,7 +240,7 @@ enableEmoji = true
 
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = "posts/:slugorfilename"
+  posts = "posts/:slugorcontentbasename"
 
 # -------------------------------------------------------------------------------------
 # Privacy Configuration
@@ -248,7 +248,7 @@ enableEmoji = true
 # -------------------------------------------------------------------------------------
 
 [privacy]
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
@@ -722,7 +722,7 @@ enableEmoji = true
     fontFamily = "inherit"
 
   # FixIt 0.2.12 | NEW Busuanzi count
-  [params.ibruce]
+  [params.busuanzi]
     enable = false
     # Enable in post meta
     enablePost = false
