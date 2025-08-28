@@ -481,7 +481,8 @@ enableEmoji = true
     # 网站创立年份
     since = "2022"
     # FixIt 0.2.12 | 公网安备信息，仅在中国使用（支持 HTML 格式）
-    gov = "<i class='fa-solid fa-eye'></i> <span id='qexo-site-pv'>Loading...</span> | <i class='fa-solid fa-user'></i> <span id='qexo-site-uv'>Loading...</span>"
+    # gov = "<i class='fa-solid fa-eye'></i> <span id='qexo-site-pv'>Loading...</span> | <i class='fa-solid fa-user'></i> <span id='qexo-site-uv'>Loading...</span>"
+    gov = ""
     # ICP 备案信息，仅在中国使用（支持 HTML 格式）
     # icp = '<a href="https://icp.gov.moe/?keyword=20230841" target="_blank">萌ICP备20230841号</a>'
     icp = '<a href="https://beian.miit.gov.cn" target="_blank">桂ICP备2024033620号-2</a>'
@@ -723,9 +724,9 @@ enableEmoji = true
 
   # FixIt 0.2.12 | NEW Busuanzi count
   [params.busuanzi]
-    enable = false
+    enable = true
     # Enable in post meta
-    enablePost = false
+    enablePost = true
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
   [params.verification]
@@ -1085,7 +1086,7 @@ enableEmoji = true
         commentCount = true # FixIt 0.2.13 | NEW
       # FixIt 0.2.16 | CHANGED Waline comment config (https://waline.js.org)
       [params.page.comment.waline]
-        enable = true
+        enable = false
         serverURL = "https://comment.zuwei.top"
         pageview = true # FixIt 0.2.15 | NEW
         emoji = ["//unpkg.com/@waline/emojis@1.2.0/bilibili", "https://unpkg.com/@waline/emojis@1.2.0/alus", "https://unpkg.com/@waline/emojis@1.2.0/tieba"]
@@ -1145,12 +1146,12 @@ enableEmoji = true
         katex = false
       # FixIt 0.2.14 | NEW Giscus comments config
       [params.page.comment.giscus]
-        enable = false
+        enable = true
         repo = "zuwei522/blog-comments"
         repoId = "R_kgDOG0bx7g"
         category = "Announcements"
         categoryId = "DIC_kwDOG0bx7s4CYzWM"
-        mapping = "title"
+        mapping = "pathname"
         origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
         strict = "0" # FixIt NEW | 0.2.18
         term = ""
@@ -1173,8 +1174,8 @@ enableEmoji = true
         # located in "assets/"
         # Or
         # someJavascript = "https://cdn.example.com/some.js"
-        qexoStatistic = "https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/statistic.js"
-        someJavascript = "js/statistic.js"
+        # qexoStatistic = "https://cdn.jsdelivr.net/npm/qexo-static@1.6.0/hexo/statistic.js"
+        # someJavascript = "js/statistic.js"
     # Page SEO config
     [params.page.seo]
       # image URL
